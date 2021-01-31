@@ -1,0 +1,19 @@
+// tarjeta planes y precios 
+.card {
+    background-color: $white;
+    color: $raisingblack;
+    padding: 20px 24px;
+    margin: 20px 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    &__text {
+        border-top: 1px solid $silverchalice;
+        border-bottom: 1px solid $silverchalice;
+        margin: 20px 0;
+        flex-grow: 1;
+        & ul {
+            padding: 0px 20px;
+        }
+    }
+}

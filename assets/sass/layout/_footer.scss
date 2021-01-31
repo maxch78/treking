@@ -1,0 +1,27 @@
+// pie de página
+.footer {
+    background-color: $raisingblack;
+    color: $lavendergray;
+    width: 100%;
+    height: 100%;
+    padding: 15px 80px;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    &__links ul{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding: 0px 0px;
+    }    
+    &__links li {
+        list-style: none;
+        padding: 0px 0px;
+        margin: auto 30px auto auto;
+    }
+    &__links a {
+        @include footer-link_colors;
+    }
+}

@@ -1,0 +1,32 @@
+// efecto desvanecer
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+// efecto ScaleY
+@keyframes ScaleY {
+    from { transform: scaleY(1); }
+      to { transform: scaleY(6); }
+}
+
+// animación en gráfico de barras
+.features__content__graph {
+    & svg {
+        animation: fadeIn 1.5s ease-in-out infinite alternate;
+    }
+}
+
+.features__content__graph:hover {
+    & svg {
+        animation: fadeIn 0.4s ease-in;
+    }
+    & svg {
+        & .a-bar {
+            animation: ScaleY 0.6s ease-in infinite alternate forwards;
+        }
+        & .b-bar {
+            animation: ScaleY 0.6s ease-in-out infinite alternate-reverse backwards;
+        }
+    }
+}

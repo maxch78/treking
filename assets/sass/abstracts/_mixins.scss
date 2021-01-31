@@ -1,0 +1,52 @@
+// colores de links
+@mixin link_colors {
+    text-decoration: none;
+      &:link{
+        color: $raisingblack;
+      } 
+      &:visited{
+        color: $raisingblack;
+      }
+      &:hover{
+        color: $ballblue;
+      }
+      &:active{
+        color: $bluelagoon;
+      }
+  }
+
+// colores de links en menú hamburguesa
+  @mixin responsive-link_colors {
+    text-decoration: none;
+      &:link{
+        color: $white;
+      } 
+      &:visited{
+        color: $white;
+      }
+      &:hover{
+        color: $raisingblack;
+        background-color: $middleblue;
+        opacity: 0.8;
+      }
+      &:active{
+        color: $bluelagoon;
+      }
+  }
+
+  // colores de link de footer
+  @mixin footer-link_colors {
+    text-decoration: none;
+      &:link{
+        color: $white;
+      } 
+      &:visited{
+        color: $white;
+      }
+      &:hover{
+        color: $darksalmon;
+      }
+      &:active{
+        color: $melon;
+      }
+  }

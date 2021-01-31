@@ -1,0 +1,75 @@
+/* Base Typography*/
+h1, h2, h3, h4, h5, span {
+    font-family: $raleway;
+}
+
+h1 {
+    font-size: $xxxxx-large;
+}
+
+h2 {
+    font-size: $xxxx-large;
+}
+
+h3 {
+    font-size: $xxx-large;
+}
+
+h4 {
+    font-size: $xx-large;
+}
+
+h5 {
+    font-size: $x-large;
+}
+
+p, a, ul, li, ol {
+    font-family: $opensans;
+}
+
+
+.features__title, .prices__title {
+    text-align: center;
+}
+
+.navbar {
+    font-size: $small;
+}
+
+.trekking__text {
+    & h1 {
+        line-height: 1em;
+        margin: 0px;
+    }
+    & p {
+        line-height: 2em;
+        font-size: $medium;
+    }
+}
+
+.features {
+    & h3, h5 {
+        line-height: 1em;
+        margin: 0px;
+    }
+    & p {
+        line-height: 2em;
+        font-size: $medium;
+    }
+}
+
+.prices {
+    & h3, h4 {
+        line-height: 1em;
+        margin: 0px;
+    }
+    & p {
+        line-height: 1em;
+        margin: 10px auto;
+        font-size: $large;
+    }
+    & ul li{
+        line-height: 2em;
+        font-size: $x-small;
+    }
+}

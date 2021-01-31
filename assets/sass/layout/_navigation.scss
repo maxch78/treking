@@ -1,0 +1,48 @@
+// barra de navegación
+.navbar {
+    width: 100%;
+    color: $raisingblack;
+    margin: 0;
+    padding: 15px 0px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+        &__logo {
+            margin-left: 80px;
+            margin-right: 20px;
+            height: 100%;
+        }
+        &__signin {
+            margin-left: auto;
+            margin-right: 80px;
+        }
+}
+
+.navbar {
+    &__logo, &__signin, .toggle-icon {
+            vertical-align: middle;
+    }
+}
+
+.navbar a.nav-link {
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin: 2px 8px;
+    @include link_colors;
+}
+
+// ícono hamburguesa
+.navbar .toggle-icon {
+    display: none;
+    margin-left: auto;
+    margin-right: 80px;
+    @include link_colors;
+  }
+
+  .navbar .toggle-icon:hover {
+      color: $raisingblack;
+  }

@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Jennyfer Vicencio Arce">
+    <link rel="shortcut icon" href="./assets/img/Logo.svg" type="image/x-icon">
+    <!-- links -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Startup Trek</title>
+  </head>
+    
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="navbar__logo">
+         <a href="#"><img src="./assets/img/Logo.svg" alt="logo"></a>
+      </div>
+
+      <a class="nav-link" href="#about">Acerca de</a>
+      <a class="nav-link" href="#features">Características</a>
+      <a class="nav-link" href="#prices">Precios</a>
+
+      <div>
+        <a class="toggle-icon" href="javascript:void(0);"  onclick="myFunction()">
+        <i class="fa fa-bars fa-3x"></i></a>
+      </div>
+      
+      <div class="navbar__signin">
+        <button class="btn">Iniciar Sesión</button>
+        <button class="btn primary-btn regular-btn">Regístrate</button>
+      </div>
+    </nav>
+
+    <main class="main-container">
+
+      <header class="trekking" id="about">
+        <div class="trekking__text">
+          <h1>
+            Haz Trekking sin parar
+          </h1>
+          <p>
+            Con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos podrás definir la mejor ruta a tomar con tus compañeros de expedición.
+          </p>
+        </div>
+        <div class="trekking__img">
+          <img src="./assets/img/bg-hero.svg" alt="bg-hero">
+        </div>
+      </header>
+
+      <section class="features" id="features">
+        <h3 class="features__title">
+          Características
+        </h3>
+        <div class="features__content">
+          <div class="features__content__graph">
+            <svg width="318" height="165" xmlns="http://www.w3.org/2000/svg">
+              <g class="bar-graph" fill-rule="evenodd">
+                  <path class="a-bar" fill="#EE9480" d="M10.949 53h34.778v108H10.949zM63.613 0h34.778v161H63.613zM116.276 32h34.778v129h-34.778z"/>
+                  <path class="b-bar" fill="#2AB7CA" d="M168.94 53h34.778v108H168.94zM221.603 28h34.778v133h-34.778zM274.267 73h34.778v88h-34.778z"/>
+                  <path class="plane" d="M3 162.5h312.503" stroke="#979797" stroke-width="5" stroke-linecap="square"/>
+              </g>
+            </svg>
+          </div>
+          <div class="features__content__text">
+            <h5>
+              Estadísticas de tu progreso
+            </h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, cupiditate facere odit sit cumque quos? Esse assumenda totam deserunt praesentium officia ducimus?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="prices" id="prices">
+        <h3 class="prices__title">Precios</h3>
+        <div class="prices__content">
+          <div class="prices__content__free card">
+            <div class="card__title">
+              <p>Trekk-in Free</p>
+              <h4>$ 0 / mes</h4>
+            </div>
+            <div class="card__text">
+              <ul>
+                <li>Ver mapas creados por usuarios</li>
+                <li>Concretar con otros usuarios</li>
+              </ul>
+            </div>
+            <button class="btn primary-btn large-btn">Obtén Free</button>
+          </div>
+          <div class="prices__content__premium card">
+            <div class="card__title">
+              <p>Trekk-in Premium</p>
+              <h4>$ 3500 / mes</h4>
+            </div>
+            <div class="card__text">
+              <ul>
+                <li>Ver mapas creados por usuarios</li>
+                <li>Concretar con otros usuarios</li>
+                <li>Definir mejores rutas</li>
+                <li>Mapas Offline</li>
+                <li>Integración con otras aplicaciones</li>
+              </ul>
+            </div>
+            <button class="btn primary-btn large-btn">Obtén Premium</button>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__links">
+          <ul>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Legal</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Cookies</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Sobre anuncios</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright">
+          <span>© 2018 Trekk-in SPA.</span>
+        </div>
+      </footer>
+
+    </main>
+
+        <!-- Optional JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("navbar");
+            if (x.className === "navbar") {
+              x.className += " responsive";
+            } else {
+              x.className = "navbar";
+            }
+          }
+          </script>
+    </body>  
+</html>

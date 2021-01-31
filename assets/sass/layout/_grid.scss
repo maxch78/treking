@@ -1,0 +1,308 @@
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    
+    // barra de navegación hamburguesa
+    .navbar .nav-link, .navbar__signin {
+        display: none;
+    }
+    .navbar a.toggle-icon {
+        float: right;
+        display: block;
+    }
+    .navbar.responsive {
+        display: block;
+        position: relative;
+        margin: 0;
+    }
+    .navbar.responsive .toggle-icon {
+        position: absolute;
+        right: 0px;
+        top: 16px;
+    }
+    .navbar.responsive a.nav-link {
+        display: block;
+        background-color: $raisingblack;
+        @include responsive-link_colors;
+    }
+
+    // barra de navegación
+    .navbar {
+        &__logo {
+            margin-left: 40px;
+        }
+        &__signin, .toggle-icon {
+            margin-right: 40px;
+        }
+}
+
+    // cabecera Trekking
+    .trekking {
+        &__text {
+            margin: 40px;
+            width: 86%;
+            position: relative;
+        }
+        &__img {
+            overflow: hidden;
+            & img {
+                width: 125%;
+                height: 100%;
+                object-fit: cover;
+                object-position: -100px -10px;
+            }
+        }
+    }
+
+    // sección Características 
+    .features {
+        &__content {
+        margin: 10px 0;
+            &__graph {
+                margin: 40px 40px;
+            }
+            &__text {
+                width: 100%;
+                margin: 10px 40px;
+            }
+        }
+    }
+
+    // sección Precios
+    .prices {
+        background-image: url('../img/bg-price-long.svg');
+        background-size: 125% auto;
+        background-position: -100px top;
+        &__title{
+            padding-top: 120px;
+        }
+        &__content{
+            grid-template-columns: auto;
+        }
+    }
+
+    // pie de página
+    .footer {
+        padding: 15px 40px;
+        &__links {
+            width: 100%;
+        }
+        &__links ul li {
+            margin: auto 30px auto 30px;
+        }
+        &__copyright {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+    // barra de navegación hamburguesa
+    .navbar .nav-link, .navbar__signin {
+        display: none;
+    }
+    .navbar a.toggle-icon {
+        float: right;
+        display: block;
+    }
+    .navbar.responsive {
+        display: block;
+        position: relative;
+        margin: 0;
+    }
+    .navbar.responsive .toggle-icon {
+        position: absolute;
+        right: 0px;
+        top: 16px;
+    }
+    .navbar.responsive a.nav-link {
+        display: block;
+        background-color: $raisingblack;
+        @include responsive-link_colors;
+    }
+
+    // barra de navegación
+    .navbar {
+            &__logo {
+                margin-left: 60px;
+            }
+            &__signin, .toggle-icon {
+                margin-right: 60px;
+            }
+    }
+
+    // cabecera Trekking
+    .trekking {
+        &__text {
+            margin: 40px 60px;
+            width: 82%;
+            position: relative;
+        }
+        &__img {
+            overflow: hidden;
+            & img {
+                width: 125%;
+                height: 100%;
+                object-fit: cover;
+                object-position: -140px -20px;
+            }
+        }
+    }
+
+    // sección Características 
+    .features {
+        &__content {
+        margin: 10px 0;
+            &__graph {
+                margin: 40px 40px;
+            }
+            &__text {
+                width: 80%;
+                margin: 10px 40px;
+            }
+        }
+    }
+
+    // sección Precios
+    .prices {
+        background-image: url('../img/bg-price-long.svg');
+        background-size: 125% auto;
+        background-position: -140px top;
+        &__title {
+            padding-top: 140px;
+        }
+        &__content {
+            grid-template-columns: auto;
+        }   
+    }
+
+    // pie de página
+    .footer {
+        padding: 15px 40px;
+        &__links {
+            width: 100%;
+        }
+        &__links ul li {
+            margin: auto 30px auto 30px;
+        }
+        &__copyright {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+    // barra de navegación hamburguesa
+        .navbar .nav-link, .navbar__signin {
+            display: none;
+        }
+        .navbar a.toggle-icon {
+            float: right;
+            display: block;
+        }
+        .navbar.responsive {
+            display: block;
+            position: relative;
+            margin: 0;
+        }
+        .navbar.responsive .toggle-icon {
+            position: absolute;
+            right: 0px;
+            top: 16px;
+        }
+        .navbar.responsive a.nav-link {
+            display: block;
+            background-color: $raisingblack;
+            @include responsive-link_colors;
+        }
+
+    // cabecera Trekking
+    .trekking {
+        height: fit-content;
+        &__text {
+            margin: 40px 80px;
+            width: 69%;
+            position: absolute;
+        }
+        &__img {
+            overflow: hidden;
+            & img {
+                width: 125%;
+                height: 100%;
+                object-fit: cover;
+                object-position: -190px;
+            }
+        }
+    }
+
+    // sección Características 
+    .features {
+        &__content {
+        margin: 10px 0;
+            &__graph {
+                margin: 40px;
+            }
+            &__text {
+                width: 70%;
+                margin: 10px 40px;
+            }
+        }
+    }
+
+    // sección Precios
+    .prices {
+        background-size: 125%;
+        background-position: -190px top;
+        &__title{
+            padding-top: 150px;
+        }
+    }
+}
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+    // cabecera Trekking
+    .trekking {
+        height: 100%;
+        &__text {
+            width: 68%;
+            position: absolute;
+        }
+    }
+
+    // sección Características 
+    .features {
+        &__content {
+        margin: 10px 0;
+            &__graph {
+                margin: 40px;
+            }
+            &__text {
+                width: 68%;
+                margin: 10px 40px;
+            }
+        }
+    }
+
+    // sección Precios
+    .prices {
+        &__title{
+            padding-top: 150px;
+        }
+    }
+}
+
+/*
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+*/

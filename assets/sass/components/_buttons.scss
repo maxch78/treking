@@ -1,0 +1,46 @@
+// botón por defecto
+.btn {
+    background-color: transparent;
+    font-family: $raleway;
+    font-size: $small;
+    font-weight: bold;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: $spanishgray;
+}
+.btn:focus {
+    outline: 1px auto $bluelagoon;
+}
+
+// botón primario
+.primary-btn {
+    background-color: $ballblue;
+    color: $white;
+}
+.primary-btn:hover {
+    background-color: $middleblue;
+    color: $white;
+}
+.primary-btn:focus {
+    background-color: $silverchalice;
+    outline: none;
+}
+
+// tamaños
+.regular-btn {
+    padding: 10px;
+}
+.large-btn {
+    padding: 8px 15px;
+    width: 100%;
+}
+
+
+
+
